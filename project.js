@@ -5,14 +5,16 @@ const car = {
   year: 2025,
   avgSpeed: 100,
 
-  display() {
+  display() 
+  {
     console.log(`Manufacturer: ${this.manufacturer}`);
     console.log(`Model: ${this.model}`);
     console.log(`Year: ${this.year}`);
     console.log(`Speed: ${this.avgSpeed} km/h`);
   },
 
-  TravelTime(distance) {
+  TravelTime(distance) 
+  {
     const speed = this.avgSpeed;
     const driveTime = distance / speed;
     const breaks = Math.floor(driveTime / 4);
